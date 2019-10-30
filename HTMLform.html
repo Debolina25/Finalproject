@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="form.css" />
+</head>
+<body>
+    <h1 class="title">Survey Form</h1>
+    <div class="block">
+    <p class="description">Let us know how we can improve freeCodeCamp</p>
+        <form id="survey-form">
+            <div class="main1">
+                <div class="d1">
+                    <label id="name-label">Name:</label>
+                </div>
+                <div class="d2">
+                     <input type="text"  class="input" id="name" name="name" autofocus placeholder="Your name" required>
+                </div>
+             </div>
+            <div class="main1">
+               <div class="d1">
+                    <label  id="email-label">Email:</label>
+               </div>
+               <div class="d2">
+                    <input type="email" class="input" id="email" name="email" placeholder="Your email id" required>
+                </div>
+            </div>
+            <div class="main1">
+                <div class="d1">
+                      <label   id="number-label">Age:</label>
+                </div>
+                <div class="d2">
+                     <input type="number" class="input"  id="number" name="quantity" min="10" max="80" placeholder="Age" required />
+                </div>
+            </div>
+            <div class="main1">
+                <div class="d1">
+                    <label id="dropdown-level">Which option best now for your role:</label>
+                 </div>
+                <div class="d2">
+                   <select class="drop" id="dropdown" name="dropdown" required>
+                    <option disabled value>Select an option</option>
+                     <option value="student">student</option> 
+                      <option value="full time">full time</option>
+                       <option value="prefer not to say">prefer not to say</option>
+                        <option value="other">other</option>
+                    </select>
+                 </div>
+            </div>
+            <div class="main1">
+                <div class="d1">
+                      <label id="radio-level">How likely is that You would recomended free CodeCamp to a friends?</label>
+                 </div>
+                 <div class="d2">    
+                    <input type="radio" class="radio" name="survey" value="Definitely"  /> Definitely<br />
+                    <input type="radio"  class="radio" name="survey" value="May Be"  /> May Be<br />
+                    <input type="radio"  class="radio"  name="survey" value="Not Sure"  /> Not Sure
+                 </div>
+            </div>
+            <div class="main1">
+                <div class="d1">
+                    <label id="Label1">What do you like most in FCC:</label>
+                </div>
+                <div class="d2">
+                        <select class="drop" id="Select1" name="dropdown"> 
+                        <option value="challenges">challenges</option> 
+                        <option value="projects">projects</option>
+                        <option value="community">community</option>
+                        <option value="Open Source">Open Source</option>
+                        </select>
+               </div>
+            </div>
+            <div class="main1">
+                <div class="d1">
+                       <label id="check-level">Things that should be improved in the future(Check all that apply):</label>
+                </div>
+                <div class="d2">
+                       <input class="radio" type="checkbox" name="survey1" value="Front-end Projects"  /> Front-end Projects<br />
+                       <input  class="radio"type="checkbox" name="survey1" value="Back-end Projects"  /> Back-end Projects<br />
+                       <input  class="radio"type="checkbox" name="survey1" value="Data Visualization"  /> Data Visualization<br />
+                       <input  class="radio"type="checkbox" name="survey1" value="Challenges"  /> Challenges<br />
+                       <input class="radio" type="checkbox" name="survey1" value="Open Source Community"  /> Open Source Community<br />
+                       <input class="radio" type="checkbox" name="survey1" value="Gitter help rooms"  /> Gitter help rooms<br />
+                       <input class="radio" type="checkbox" name="survey1" value="Videos"  /> Videos<br />
+                       <input class="radio" type="checkbox" name="survey1" value="City Meetups"  /> City Meetups<br />
+                       <input class="radio" type="checkbox" name="survey1" value="Wiki"  /> Wiki<br />
+                       <input class="radio" type="checkbox" name="survey1" value="Forum" /> Forum<br />
+                       <input class="radio" type="checkbox" name="survey1" value="Additional Courses"  /> Additional Courses
+               </div>
+            </div>
+            <div class="main1">
+                <div class="d1">
+                    <label id="Lavel2">Any Comments or Suggetions?</label>
+                </div>
+                <div class="d2">
+                <textarea  class="input1" name="message" rows="5" cols="50">Enter your comment here...</textarea>
+                </div>
+            </div>
+           <div style="text-align:center"><button class="submit" type="submit" id="submit" >submit</button></div>
+        </form>
+        </div>
+</body>
+</html>
